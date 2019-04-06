@@ -12,9 +12,11 @@ h1{font-size:250%;}
 h2{font-size:150%;}
 
 /*classes*/
-.emphasis,.tagline{font-weight:bold;color:#383737;}
-.client-name, .disclaimer{font-style: italic;}
+.emphasis,.tagline{font-weight:bold;}
+.testimonial .emphasis{margin-bottom:30px;}
+.client-name, .disclaimer, .quote{font-style: italic;}
 .disclaimer{font-size:75%;}
+.quote{margin-bottom:-12px;}
 
 /*IDs*/
 #wrapper{padding-left:20px;}
