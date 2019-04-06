@@ -1,0 +1,55 @@
+html, body,  h1, h2, h3, section, p, ul, li, a
+    {
+        font-family:Helvetica, sans-serif;
+        font-size:100%;
+        width:100%;
+    }
+
+/*HTML*/
+section{margin-bottom:40px;}
+section h2, section h3, section p{max-width:50%;}
+h1{font-size:250%;}
+h2{font-size:150%;}
+
+/*classes*/
+.emphasis,.tagline{font-weight:bold;color:#383737;}
+.client-name, .disclaimer{font-style: italic;}
+.disclaimer{font-size:75%;}
+
+/*IDs*/
+#wrapper{padding-left:20px;}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* HTML */
+    section{margin-bottom:70px;}
+    section h2, section h3, section p{max-width:85%;}
+
+    /* IDs */
+    #wrapper{padding-left:40px;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
