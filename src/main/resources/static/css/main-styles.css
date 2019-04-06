@@ -3,6 +3,7 @@ html, body,  h1, h2, h3, section, p, ul, li, a
         font-family:Helvetica, sans-serif;
         font-size:100%;
         width:100%;
+        font-weight:lighter;
     }
 
 /*HTML*/
@@ -12,9 +13,16 @@ h1{font-size:250%;}
 h2{font-size:150%;}
 
 /*classes*/
-.emphasis,.tagline{font-weight:bold;}
-.testimonial .emphasis{margin-bottom:30px;}
+.emphasis, .emphasis2, .tagline{font-weight:bold;}
+.testimonial .emphasis2{margin-bottom:30px;}
+.mobile-portrait-only{display:none;}
+.work-summary{
+    background-color: #ecebeb;
+    border-radius:10px;
+    padding:2px 2px 2px 12px;
+    }
 .client-name, .disclaimer, .quote{font-style: italic;}
+.client-name{margin-bottom:-12px;}
 .disclaimer{font-size:75%;}
 .quote{margin-bottom:-12px;}
 
@@ -24,8 +32,14 @@ h2{font-size:150%;}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* HTML */
-    section{margin-bottom:70px;}
+    section{margin-bottom:80px;}
     section h2, section h3, section p{max-width:85%;}
+    /*.work-summary p{max-width:98%; margin:0 auto;}*/
+    .testimonial br{display:none}
+
+    /*Classes*/
+    .quote{margin-bottom:-25px;}
+    .mobile-portrait-only{display:inline;}
 
     /* IDs */
     #wrapper{padding-left:40px;}
@@ -34,11 +48,18 @@ h2{font-size:150%;}
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
     /* Styles */
+
+    /*CLASSES*/
+    .work-summary{padding: 1px 2px 2px 12px;}
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
     /* Styles */
+
+    /*CLASSES*/
+    .work-summary{padding:2px 2px 2px 34px; margin-left:-20px;margin-top:50px;}
+    .mobile-portrait-only{display:inline;}
 }
 
 /* iPads (portrait and landscape) ----------- */
