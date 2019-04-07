@@ -3,28 +3,38 @@ html, body,  h1, h2, h3, section, p, ul, li, a
         font-family:Helvetica, sans-serif;
         font-size:100%;
         width:100%;
-        font-weight:lighter;
+        font-weight:normal;
     }
 
 /*HTML*/
-section{margin-bottom:40px;}
-section h2, section h3, section p{max-width:50%;}
+section{margin-bottom:40px; width:100%;}
+section h2, section h3, section p{max-width:50%}
 h1{font-size:250%;}
 h2{font-size:150%;}
+figure{margin:2px;}
+figcaption{display: none;}
 
 /*classes*/
 .emphasis, .emphasis2, .tagline{font-weight:bold;}
 .testimonial .emphasis2{margin-bottom:30px;}
 .mobile-portrait-only{display:none;}
 .work-summary{
-    background-color: #ecebeb;
+    /*background-color: #ecebeb;*/
     border-radius:10px;
     padding:2px 2px 2px 12px;
+    max-width:80%;
     }
+.work-summary p, .work-summary h3{max-width: 100%;}
+.work-summary div:first-child{max-width:50%}
+.logo-image{max-width: 135px;}
 .client-name, .disclaimer, .quote{font-style: italic;}
 .client-name{margin-bottom:-12px;}
 .disclaimer{font-size:75%;}
 .quote{margin-bottom:-12px;}
+
+.left{float:left;}
+.clear-float{clear:both;}
+.inline{display:inline;}
 
 /*IDs*/
 #wrapper{padding-left:20px;}
@@ -40,6 +50,8 @@ h2{font-size:150%;}
     /*Classes*/
     .quote{margin-bottom:-25px;}
     .mobile-portrait-only{display:inline;}
+    .work-summary div:first-child{max-width:100%; float:unset;}
+    .work-summary figure{display:none;}
 
     /* IDs */
     #wrapper{padding-left:40px;}
